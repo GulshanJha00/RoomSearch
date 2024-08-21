@@ -1,0 +1,62 @@
+/* src/styles/Home.css */
+.text-animation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem; /* Adjust as needed */
+}
+
+@media (max-width: 768px) {
+  .text-animation span {
+    font-size: 2rem; /* Adjust as needed */
+  }
+}
+
+/* src/styles/Proceed.css */
+@media (max-width: 768px) {
+  .flex-col {
+    flex-direction: column;
+  }
+
+  .space-y-12 > * + * {
+    margin-top: 3rem; /* Adjust as needed */
+  }
+}
+
+
+  .text-8xl {
+    font-size: 4rem; /* Adjust as needed */
+  }
+
+  button {
+    font-size: 1rem; /* Adjust as needed */
+    padding: 1rem 2rem; /* Adjust as needed */
+  }
+
+
+  
+  .animate-word {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 2s forwards;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Delay for each word */
+  .animate-word:nth-child(1) { animation-delay: 0.2s; }
+  .animate-word:nth-child(2) { animation-delay: 0.4s; }
+  .animate-word:nth-child(3) { animation-delay: 0.6s; }
+  .animate-word:nth-child(4) { animation-delay: 0.8s; }
+  .animate-word:nth-child(5) { animation-delay: 1.0s; }
+  .animate-word:nth-child(6) { animation-delay: 1.3s; }
+  
